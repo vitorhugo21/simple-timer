@@ -1,0 +1,96 @@
+@font-face {
+  font-family: orbitron-regular;
+  src: url('./assets/fonts/Orbitron-font/Orbitron-Regular.ttf');
+}
+
+@font-face {
+  font-family: orbitron-500;
+  src: url('./assets/fonts/Orbitron-font/Orbitron-Medium.ttf');
+}
+
+@font-face {
+  font-family: orbitron-bold;
+  src: url('./assets/fonts/Orbitron-font/Orbitron-Bold.ttf');
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;;
+}
+
+body {
+  background: #fff;
+  box-sizing: border-box;
+  font-family: orbitron-regular;
+  background: linear-gradient(to right top, #65dfc9, #6cdbed);
+}
+
+main {
+  text-align: center;
+  min-height: 95vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+main h1 {
+  font-size: 2.4rem;
+  font-family: orbitron-bold;
+  letter-spacing: .4rem;
+  text-transform: uppercase;
+}
+
+.timer {
+  font-family: orbitron-500;
+  font-size: 6rem;
+  letter-spacing: .2rem;
+  width: 70%;
+  background: linear-gradient(
+    to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3)
+  );
+  backdrop-filter: blur(2rem);
+  border-radius: 2rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem 2rem;
+}
+
+.timer--numbers {
+  display: flex;
+}
+
+.timer-minutes--numbers {
+  flex: 1;
+}
+
+button {
+  background: linear-gradient(to right top, #65dfc9, #6cdbed);
+  opacity: .6;
+  border-radius: 1rem;
+  border: none;
+  font-family: orbitron-bold;
+  color: #fff;
+  font-size: 3rem;
+  transition: .3s;
+}
+
+button:hover {
+  opacity: 1;
+}
+
+button:focus {
+  outline: none;
+}
+
+/* main .commands {
+  display: flex;
+} */
